@@ -17,4 +17,10 @@ SOURCES += main.cpp\
 HEADERS  += dicomwindow.h
 
 FORMS    += dicomwindow.ui
-LIBS += -lmdc
+unix {
+    LIBS += -lmdc
+}
+win32 {
+    LIBS += "C:/Program Files/XMedCon/bin/libmdc-2.dll" -lmdc
+    INCLUDEPATH += "C:/Program Files/XMedCon/include"
+}
