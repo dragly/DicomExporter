@@ -34,7 +34,7 @@
        <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
-          <string>Select a file name and place of your choise. If the DICOM file consist of several frames, the file name will be appended with the frame number.</string>
+          <string>Select a file name and place of your choice. If the DICOM file consist of several frames, the file name will be appended with the frame number.</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
