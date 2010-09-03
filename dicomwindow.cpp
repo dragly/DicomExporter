@@ -1,6 +1,7 @@
 #include "dicomwindow.h"
 #include "ui_dicomwindow.h"
 #include "dicomexporter.h"
+#include "aboutdialog.h"
 
 #include <QDebug>
 #include <QFileDialog>
@@ -114,4 +115,10 @@ void DicomWindow::updateProgressBar(int type, float value, char *label)
     }
     emit setProgress((int)(progressValue * 100));
 
+}
+
+void DicomWindow::on_actionAbout_triggered()
+{
+    AboutDialog *about = new AboutDialog(this);
+    about->exec();
 }

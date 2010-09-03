@@ -13,12 +13,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         dicomwindow.cpp \
-    dicomexporter.cpp
+    dicomexporter.cpp \
+    aboutdialog.cpp
 
 HEADERS  += dicomwindow.h \
-    dicomexporter.h
+    dicomexporter.h \
+    aboutdialog.h
 
-FORMS    += dicomwindow.ui
+FORMS    += dicomwindow.ui \
+    aboutdialog.ui
 unix {
     LIBS += -lmdc
 }

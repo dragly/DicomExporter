@@ -38,6 +38,7 @@ private:
     QThread *exportThread;
 
 private slots:
+    void on_actionAbout_triggered();
     void on_btnBrowseExport_clicked();
     void on_btnExport_clicked();
     void on_btnOpenFile_clicked();
