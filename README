@@ -1,0 +1,12 @@
+This application does not work in Windows due to some problems with (X)MedCon.
+
+To build in Ubuntu, you need
+- libqt4-dev
+- libmdc2-dev
+
+To build, run:
+
+qmake
+make
+
+That should be it for now :)

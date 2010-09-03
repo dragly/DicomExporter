@@ -12,9 +12,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        dicomwindow.cpp
+        dicomwindow.cpp \
+    dicomexporter.cpp
 
-HEADERS  += dicomwindow.h
+HEADERS  += dicomwindow.h \
+    dicomexporter.h
 
 FORMS    += dicomwindow.ui
 unix {
